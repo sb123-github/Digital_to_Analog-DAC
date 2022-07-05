@@ -14,6 +14,8 @@ Implemented a 8-bit Digital to Analog Converter (DAC) using Simple Current Mirro
 - Low Voltage Sooch->sine_wave->long_channel.asc : DAC designed with Low Voltage Sooch Cascode Current mirror and takes input from MATLAB generated bit text files
 - nst_utils.py: Contains functions for use during loading dataset
 
+**Software used in this project:** LTSpice
+
 **Technology used in this project:** 65-nm PTM models downloaded from http://ptm.asu.edu/modelcard/2006/65nm_bulk.pm
 
 ## How to use the PTM model to run simulations?
@@ -40,8 +42,8 @@ Implemented a 8-bit Digital to Analog Converter (DAC) using Simple Current Mirro
   - For ac analysis of the circuit
   - Syntax: .ac<oct, dec , lin > Npoints > StartFreq > EndFreq
 - Using . meas command
-  - Syntax: . meas AC <name> FIND <expr> WHEN/AT <expr> = <condition>
-  - Syntax: . meas OP <name> PARAM < expr>
+  - Syntax: . meas AC name FIND expr WHEN/AT expr = condition
+  - Syntax: . meas OP name PARAM < expr>
 
 Note: .meas command is to be used along with .op / .ac command (Applicable analysis)
 
